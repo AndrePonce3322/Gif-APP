@@ -1,0 +1,185 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background: black;
+    z-index: 20;
+}
+
+.menu * {
+    color: white;
+}
+
+.menu .logo {
+    height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Itim', cursive;
+}
+
+.menu .logo * {
+    padding: 0;
+    margin: 0;
+}
+
+.menu .logo img {
+    width: 40px;
+    height: inherit;
+    object-fit: cover;
+}
+
+.menu_dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+}
+
+.dropdown {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 10px;
+    width: 100px;
+    cursor: pointer;
+    padding: 5px 0px;
+    text-align: center;
+    transition: 0.1s ease-in;
+    border-bottom: 4px transparent solid;
+}
+
+.dropdown:hover {
+    border-bottom: 4px white solid;
+}
+
+.home{
+    border-bottom: 4px white solid;
+}
+
+
+.dropdown a {
+    width: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.bienvenida{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: 'Itim', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    background: #202020;
+}
+.bienvenida img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bienvenida .contenido {
+    width: 600px;
+    height: 300px;
+    margin-left: 10px;
+    z-index: 2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenido p{
+    color: #a8a8a8;
+}
+
+.buscar{
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buscar .contenido{
+    width: 80%;
+}
+
+.title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-family: 'Itim', cursive;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+.input button{
+    outline: none;
+    border: 1px gray solid;
+    border-left: 0px ;
+}
+
+.allGift{
+    width: 98%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gift{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.gift img{
+    height: inherit;
+    width: inherit;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.gift img:hover{
+    filter: brightness(0.7)
+}
+
+@media screen and (max-width: 700px) {
+    .dropdown{
+        width: 50px;
+    }
+    .gift{
+        width: 100px;
+        height: 100px;
+    }
+}
