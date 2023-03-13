@@ -1,0 +1,44 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    padding: 100px 10px;
+}
+*{
+    color: black;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.contenido{
+    height: 300px;
+    border-top: 1px transparent solid;
+    border-bottom: 1px transparent solid;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.giftAndDescription{
+    width: 100%;
+    padding-top: 3;
+    display: flex;
+    gap: 30px;
+}
+.giftAndDescription .gift{
+    width: 400px;
+    height: 200px;
+}
+.gift img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.context{
+    padding-right: 130px;
+}
+.context p{
+    font-size: 18px;
+}

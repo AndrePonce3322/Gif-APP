@@ -1,5 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
-html,body,p{
+html,
+body,
+p {
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: 'Itim', cursive;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle */
+
+* ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+
+* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.cursor {
+    animation: cursor 0.4s infinite alternate;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+a{
+    text-decoration: none;
 }

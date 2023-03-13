@@ -1,0 +1,12 @@
+.contenedor{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    color: black;
+}

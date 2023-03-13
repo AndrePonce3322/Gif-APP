@@ -4,16 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 // Components
 import { AppComponent } from './app.component';
 import { GiftComponent } from './Gift/Gift.component';
-import {HttpClientModule } from '@angular/common/http'
+import { MenuBarComponent } from './MenuBar/menubar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GiftComponent
+    GiftComponent,
+    MenuBarComponent,
+    AboutComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

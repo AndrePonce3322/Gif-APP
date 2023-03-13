@@ -1,0 +1,29 @@
+<div class="bienvenida">
+    <img src="https://wallpaperaccess.com/full/2825704.gif" alt="" srcset="">
+    <!-- Gift buenos
+    https://wallpaperaccess.com/full/2825704.gif
+    https://cutewallpaper.org/21/cool-gif-wallpaper/Cool-GIF-on-GIFER-by-Hugirus.gif
+    https://cutewallpaper.org/26/best-looping-gifs-wallpaper/everybody-wants-to-build-and-nobody-wants-to-do-maintenance39-website-backgrounds-gif-background-motion-backgrounds.gif
+    -->
+    <div class="contenido">
+      <h3>GIFT WORLD APP</h3>
+      <p>Our website is, without a doubt, one of the best options for those looking to enjoy the most GIFs.
+        funny.</p>
+    </div>
+</div>
+
+<div class="buscar">
+  <div class="contenido">
+    <div class="title">
+      <h4 style="color: black;">SEARCH GIFT</h4>
+    </div>
+    <div class="input">
+      <input type="text" #input (keydown.enter)="Buscar(input.value)">
+      <button (click)="Buscar(input.value)">🔎</button>
+    </div>
+  </div>
+  <div class="allGift">
+    <div class="gift" *ngFor="let gift of allGift; let i = index">
+      <img [src]="gift" alt="" srcset="">
+    </div>
+  </div>

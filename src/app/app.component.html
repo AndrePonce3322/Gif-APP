@@ -1,68 +1,12 @@
 <div class="contenedor">
-  <div class="menu">
-    <div class="logo">
-      <img
-        src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h3qps4la4emoqdhgxsu4">
-      <h5>Gift APP</h5>
-    </div>
 
-    <div class="menu_dropdown">
-      <div class="dropdown home">
-        <a href="#">Home</a>
-      </div>
-      <div class="dropdown">
-        <a href="#">About</a>
-      </div>
-      <div class="dropdown">
-        <a href="#">Services</a>
-      </div>
-      <div class="dropdown">
-        <a href="#">Contact</a>
-      </div>
-      <div class="dropdown">
-        <a href="#">Log In</a>
-      </div>
-    </div>
-  </div>
-  <div class="bienvenida">
-    <img src="https://wallpaperaccess.com/full/2825704.gif" alt="" srcset="">
+  <style>
+    #margin-top {
+      margin-top: 50px;
+    }
+  </style>
 
-    <!-- Gift buenos
-    https://wallpaperaccess.com/full/2825704.gif
-    https://cutewallpaper.org/21/cool-gif-wallpaper/Cool-GIF-on-GIFER-by-Hugirus.gif
-    https://cutewallpaper.org/26/best-looping-gifs-wallpaper/everybody-wants-to-build-and-nobody-wants-to-do-maintenance39-website-backgrounds-gif-background-motion-backgrounds.gif
-    -->
-
-    <div class="contenido">
-      <h3>GIFT WORLD APP</h3>
-      <p>Nuestra página web es, sin duda, una de las mejores opciones para aquellos que buscan disfrutar de los GIFs más
-        divertidos.</p>
-    </div>
-  </div>
-</div>
-
-
-<div class="buscar">
-
-  <div class="contenido">
-
-    <div class="title">
-      <h4>BUSCAR GIFT</h4>
-    </div>
-
-    <div class="input">
-      <input type="text" #input (keydown.enter)="Buscar(input.value)" value="Busque aquí amorcito :3">
-      <button (click)="Buscar(input.value)">🔎</button>
-    </div>
-  </div>
-  <div class="allGift">
-
-    <div class="gift" *ngFor="let gift of allGift; let i = index">
-      <img [src]="gift" alt="" srcset="">
-    </div>
-
-  </div>
-  
-
-
+  <app-menu-bar></app-menu-bar>
+  <div id="margin-top"></div>
+  <router-outlet></router-outlet>
 </div>
